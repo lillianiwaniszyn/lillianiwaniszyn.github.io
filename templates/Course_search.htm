@@ -1,0 +1,187 @@
+<!doctype html><p align=center><font size=+1 color=red>This website was created by evaluation version of PHPRunner Trial.</font></p>
+<p align=center><font size=+1 color=red>This warning message will not appear on website created by a paid-for version of PHPRunner Trial.</font></p>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel Course search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_cID}">
+	{BEGIN cID_fieldblock}		
+	<td>
+		{$label Course cID}
+	</td>
+	<td>
+		<input type="checkbox" {$cID_notbox}>
+	</td>
+	<td>
+		{$searchtype_cID}
+	</td>
+	<td>
+		{$cID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$cID_editcontrol1}&nbsp;
+	</td>
+{END cID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Name}">
+	{BEGIN Name_fieldblock}		
+	<td>
+		{$label Course Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Name}
+	</td>
+	<td>
+		{$Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Name_editcontrol1}&nbsp;
+	</td>
+{END Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SKU}">
+	{BEGIN SKU_fieldblock}		
+	<td>
+		{$label Course SKU}
+	</td>
+	<td>
+		<input type="checkbox" {$SKU_notbox}>
+	</td>
+	<td>
+		{$searchtype_SKU}
+	</td>
+	<td>
+		{$SKU_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SKU_editcontrol1}&nbsp;
+	</td>
+{END SKU_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Price}">
+	{BEGIN Price_fieldblock}		
+	<td>
+		{$label Course Price}
+	</td>
+	<td>
+		<input type="checkbox" {$Price_notbox}>
+	</td>
+	<td>
+		{$searchtype_Price}
+	</td>
+	<td>
+		{$Price_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Price_editcontrol1}&nbsp;
+	</td>
+{END Price_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Category}">
+	{BEGIN Category_fieldblock}		
+	<td>
+		{$label Course Category}
+	</td>
+	<td>
+		<input type="checkbox" {$Category_notbox}>
+	</td>
+	<td>
+		{$searchtype_Category}
+	</td>
+	<td>
+		{$Category_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Category_editcontrol1}&nbsp;
+	</td>
+{END Category_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

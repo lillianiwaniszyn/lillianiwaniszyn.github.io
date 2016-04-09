@@ -1,0 +1,167 @@
+<!doctype html><p align=center><font size=+1 color=red>This website was created by evaluation version of PHPRunner Trial.</font></p>
+<p align=center><font size=+1 color=red>This warning message will not appear on website created by a paid-for version of PHPRunner Trial.</font></p>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel Student edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields2 {$brickclass_editfields2}"><table class="fieldGrid fieldGrid2 edit">
+
+<tr>
+<td>
+	{BEGIN bDay_fieldblock}
+<div data-fieldname="bDay" class="rnr-field style1 {$fielddispclass_bDay}">
+  <span class="rnr-label">{BEGIN bDay_label}{$label Student bDay}{END bDay_label}</span>
+  <span class="rnr-control style3">{$bDay_editcontrol}</span>
+</div>
+{END bDay_fieldblock}
+	{BEGIN Gender_fieldblock}
+<div data-fieldname="Gender" class="rnr-field style1 {$fielddispclass_Gender}">
+  <span class="rnr-label">{BEGIN Gender_label}{$label Student Gender}{END Gender_label}</span>
+  <span class="rnr-control style3">{$Gender_editcontrol}</span>
+</div>
+{END Gender_fieldblock}
+	{BEGIN Country_fieldblock}
+<div data-fieldname="Country" class="rnr-field style1 {$fielddispclass_Country}">
+  <span class="rnr-label">{BEGIN Country_label}{$label Student Country}{END Country_label}</span>
+  <span class="rnr-control style3">{$Country_editcontrol}</span>
+</div>
+{END Country_fieldblock}
+	{BEGIN fName_fieldblock}
+<div data-fieldname="fName" class="rnr-field style1 {$fielddispclass_fName}">
+  <span class="rnr-label">{BEGIN fName_label}{$label Student fName}{END fName_label}</span>
+  <span class="rnr-control style3">{$fName_editcontrol}</span>
+</div>
+{END fName_fieldblock}
+</td>
+<td>
+	{BEGIN mInit_fieldblock}
+<div data-fieldname="mInit" class="rnr-field style1 {$fielddispclass_mInit}">
+  <span class="rnr-label">{BEGIN mInit_label}{$label Student mInit}{END mInit_label}</span>
+  <span class="rnr-control style3">{$mInit_editcontrol}</span>
+</div>
+{END mInit_fieldblock}
+	{BEGIN lName_fieldblock}
+<div data-fieldname="lName" class="rnr-field style1 {$fielddispclass_lName}">
+  <span class="rnr-label">{BEGIN lName_label}{$label Student lName}{END lName_label}</span>
+  <span class="rnr-control style3">{$lName_editcontrol}</span>
+</div>
+{END lName_fieldblock}
+	{BEGIN eMail_fieldblock}
+<div data-fieldname="eMail" class="rnr-field style1 {$fielddispclass_eMail}">
+  <span class="rnr-label">{BEGIN eMail_label}{$label Student eMail}{END eMail_label}</span>
+  <span class="rnr-control style3">{$eMail_editcontrol}</span>
+</div>
+{END eMail_fieldblock}
+	{BEGIN reg_date_fieldblock}
+<div data-fieldname="reg_date" class="rnr-field style1 {$fielddispclass_reg_date}">
+  <span class="rnr-label">{BEGIN reg_date_label}{$label Student reg_date}{END reg_date_label}</span>
+  <span class="rnr-control style3">{$reg_date_editcontrol}</span>
+</div>
+{END reg_date_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+	{BEGIN prev_button}
+	<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+	{END prev_button}
+	{BEGIN next_button}
+	<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+	{END next_button}
+</div>
+<div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" {$savebutton_attrs}>Save</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+	{END reset_button}
+	{BEGIN back_button}
+		<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+	{END close_button}
+		{BEGIN view_page_button}
+	<a href="#" class="rnr-button" {$view_page_button_attrs}>View</a>
+	{END view_page_button}
+</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

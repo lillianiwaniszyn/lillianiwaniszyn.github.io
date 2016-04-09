@@ -1,0 +1,63 @@
+<div {$pageattrs}>
+
+{BEGIN container_dcount}
+<div class="rnr-c rnr-cv rnr-c-dcount">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewheader {$brickclass_detailspreviewheader}">	<h1>{$pagetitlelabel Module detailspreview}</h1>
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewdetailsfount {$brickclass_detailspreviewdetailsfount}">Details found: <strong>{$row_count}.</strong>
+</div>
+
+
+{BEGIN display_first}
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewdispfirst {$brickclass_detailspreviewdispfirst}">Displaying first: <strong>{$display_count}</strong>.
+</div>{END display_first}
+
+
+</div>
+{END container_dcount}
+
+
+
+{BEGIN container_detailspreviewgrid}
+
+
+{BEGIN details_data}
+<table class="rnr-c rnr-cont rnr-c--detailspreviewgrid rnr-b-detailspreviewgrid rnr-gridtable">
+{BEGIN details_row_header}
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$Term_class}">{$label Module Term}</th>
+			<th class="{$Section_class}">{$label Module Section}</th>
+			<th class="{$cID_class}">{$label Module cID}</th>
+			<th class="{$Start_date_class}">{$label Module Start_date}</th>
+			<th class="{$End_date_class}">{$label Module End_date}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+{END details_row_header}
+	<tbody>
+{BEGIN details_row}
+		<tr class="rnr-row style1">
+			<td class="{$Term_class}">{$Term_value}</td>
+			<td class="{$Section_class}">{$Section_value}</td>
+			<td class="{$cID_class}">{$cID_value}</td>
+			<td class="{$Start_date_class}">{$Start_date_value}</td>
+			<td class="{$End_date_class}">{$End_date_value}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+{END details_row}	
+	</tbody>
+</table>
+
+{END details_data}
+
+
+
+{END container_detailspreviewgrid}
+
+</div>

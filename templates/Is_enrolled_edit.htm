@@ -1,0 +1,137 @@
+<!doctype html><p align=center><font size=+1 color=red>This website was created by evaluation version of PHPRunner Trial.</font></p>
+<p align=center><font size=+1 color=red>This warning message will not appear on website created by a paid-for version of PHPRunner Trial.</font></p>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel Is_enrolled edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields2 {$brickclass_editfields2}"><table class="fieldGrid fieldGrid2 edit">
+
+<tr>
+<td>
+	{BEGIN uID_fieldblock}
+<div data-fieldname="uID" class="rnr-field style1 {$fielddispclass_uID}">
+  <span class="rnr-label">{BEGIN uID_label}{$label Is_enrolled uID}{END uID_label}</span>
+  <span class="rnr-control style3">{$uID_editcontrol}</span>
+</div>
+{END uID_fieldblock}
+	{BEGIN cID_fieldblock}
+<div data-fieldname="cID" class="rnr-field style1 {$fielddispclass_cID}">
+  <span class="rnr-label">{BEGIN cID_label}{$label Is_enrolled cID}{END cID_label}</span>
+  <span class="rnr-control style3">{$cID_editcontrol}</span>
+</div>
+{END cID_fieldblock}
+</td>
+<td>
+	{BEGIN Mark_fieldblock}
+<div data-fieldname="Mark" class="rnr-field style1 {$fielddispclass_Mark}">
+  <span class="rnr-label">{BEGIN Mark_label}{$label Is_enrolled Mark}{END Mark_label}</span>
+  <span class="rnr-control style3">{$Mark_editcontrol}</span>
+</div>
+{END Mark_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+	{BEGIN prev_button}
+	<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+	{END prev_button}
+	{BEGIN next_button}
+	<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+	{END next_button}
+</div>
+<div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" {$savebutton_attrs}>Save</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+	{END reset_button}
+	{BEGIN back_button}
+		<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+	{END close_button}
+		{BEGIN view_page_button}
+	<a href="#" class="rnr-button" {$view_page_button_attrs}>View</a>
+	{END view_page_button}
+</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

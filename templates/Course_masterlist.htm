@@ -1,0 +1,49 @@
+<div {$pageattrs}>
+
+{BEGIN container_masterlistheader}
+<div class="rnr-c rnr-ch rnr-c-masterlistheader">
+
+
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}">	<h1>{$pagetitlelabel Course masterlist}</h1>
+</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_masterlistheader}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table class="rnr-c rnr-cont rnr-c-mastergrid rnr-b-mastergridfields rnr-gridtable" cellpadding="0" >
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$cID_class}">{$label Course cID}</th>
+			<th class="{$Name_class}">{$label Course Name}</th>
+			<th class="{$SKU_class}">{$label Course SKU}</th>
+			<th class="{$Price_class}">{$label Course Price}</th>
+			<th class="{$Category_class}">{$label Course Category}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rnr-row style1">
+			<td class="{$cID_class}">{$cID_mastervalue}</td>
+			<td class="{$Name_class}">{$Name_mastervalue}</td>
+			<td class="{$SKU_class}">{$SKU_mastervalue}</td>
+			<td class="{$Price_class}">{$Price_mastervalue}</td>
+			<td class="{$Category_class}">{$Category_mastervalue}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+	</tbody>
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

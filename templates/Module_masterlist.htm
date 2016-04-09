@@ -1,0 +1,49 @@
+<div {$pageattrs}>
+
+{BEGIN container_masterlistheader}
+<div class="rnr-c rnr-ch rnr-c-masterlistheader">
+
+
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}">	<h1>{$pagetitlelabel Module masterlist}</h1>
+</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_masterlistheader}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table class="rnr-c rnr-cont rnr-c-mastergrid rnr-b-mastergridfields rnr-gridtable" cellpadding="0" >
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$Term_class}">{$label Module Term}</th>
+			<th class="{$Section_class}">{$label Module Section}</th>
+			<th class="{$cID_class}">{$label Module cID}</th>
+			<th class="{$Start_date_class}">{$label Module Start_date}</th>
+			<th class="{$End_date_class}">{$label Module End_date}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rnr-row style1">
+			<td class="{$Term_class}">{$Term_mastervalue}</td>
+			<td class="{$Section_class}">{$Section_mastervalue}</td>
+			<td class="{$cID_class}">{$cID_mastervalue}</td>
+			<td class="{$Start_date_class}">{$Start_date_mastervalue}</td>
+			<td class="{$End_date_class}">{$End_date_mastervalue}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+	</tbody>
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

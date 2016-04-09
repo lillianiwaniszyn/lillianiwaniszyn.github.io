@@ -1,0 +1,263 @@
+<!doctype html><p align=center><font size=+1 color=red>This website was created by evaluation version of PHPRunner Trial.</font></p>
+<p align=center><font size=+1 color=red>This warning message will not appear on website created by a paid-for version of PHPRunner Trial.</font></p>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel Student search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_sID}">
+	{BEGIN sID_fieldblock}		
+	<td>
+		{$label Student sID}
+	</td>
+	<td>
+		<input type="checkbox" {$sID_notbox}>
+	</td>
+	<td>
+		{$searchtype_sID}
+	</td>
+	<td>
+		{$sID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$sID_editcontrol1}&nbsp;
+	</td>
+{END sID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_bDay}">
+	{BEGIN bDay_fieldblock}		
+	<td>
+		{$label Student bDay}
+	</td>
+	<td>
+		<input type="checkbox" {$bDay_notbox}>
+	</td>
+	<td>
+		{$searchtype_bDay}
+	</td>
+	<td>
+		{$bDay_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$bDay_editcontrol1}&nbsp;
+	</td>
+{END bDay_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Gender}">
+	{BEGIN Gender_fieldblock}		
+	<td>
+		{$label Student Gender}
+	</td>
+	<td>
+		<input type="checkbox" {$Gender_notbox}>
+	</td>
+	<td>
+		{$searchtype_Gender}
+	</td>
+	<td>
+		{$Gender_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Gender_editcontrol1}&nbsp;
+	</td>
+{END Gender_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_reg_date}">
+	{BEGIN reg_date_fieldblock}		
+	<td>
+		{$label Student reg_date}
+	</td>
+	<td>
+		<input type="checkbox" {$reg_date_notbox}>
+	</td>
+	<td>
+		{$searchtype_reg_date}
+	</td>
+	<td>
+		{$reg_date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$reg_date_editcontrol1}&nbsp;
+	</td>
+{END reg_date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Country}">
+	{BEGIN Country_fieldblock}		
+	<td>
+		{$label Student Country}
+	</td>
+	<td>
+		<input type="checkbox" {$Country_notbox}>
+	</td>
+	<td>
+		{$searchtype_Country}
+	</td>
+	<td>
+		{$Country_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Country_editcontrol1}&nbsp;
+	</td>
+{END Country_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_fName}">
+	{BEGIN fName_fieldblock}		
+	<td>
+		{$label Student fName}
+	</td>
+	<td>
+		<input type="checkbox" {$fName_notbox}>
+	</td>
+	<td>
+		{$searchtype_fName}
+	</td>
+	<td>
+		{$fName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$fName_editcontrol1}&nbsp;
+	</td>
+{END fName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_mInit}">
+	{BEGIN mInit_fieldblock}		
+	<td>
+		{$label Student mInit}
+	</td>
+	<td>
+		<input type="checkbox" {$mInit_notbox}>
+	</td>
+	<td>
+		{$searchtype_mInit}
+	</td>
+	<td>
+		{$mInit_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$mInit_editcontrol1}&nbsp;
+	</td>
+{END mInit_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_lName}">
+	{BEGIN lName_fieldblock}		
+	<td>
+		{$label Student lName}
+	</td>
+	<td>
+		<input type="checkbox" {$lName_notbox}>
+	</td>
+	<td>
+		{$searchtype_lName}
+	</td>
+	<td>
+		{$lName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$lName_editcontrol1}&nbsp;
+	</td>
+{END lName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_eMail}">
+	{BEGIN eMail_fieldblock}		
+	<td>
+		{$label Student eMail}
+	</td>
+	<td>
+		<input type="checkbox" {$eMail_notbox}>
+	</td>
+	<td>
+		{$searchtype_eMail}
+	</td>
+	<td>
+		{$eMail_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$eMail_editcontrol1}&nbsp;
+	</td>
+{END eMail_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>
